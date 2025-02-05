@@ -11,11 +11,11 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Andromeda"
+    "dark": "Atelier Cave Dark"
   },
   // UI
   "ui_font_family": "JetBrainsMono Nerd Font",
-  "ui_font_size": 22,
+  "ui_font_size": 18,
   "ui_font_weight": 400,
   // Buffer
   "buffer_font_family": "JetBrainsMono Nerd Font",
@@ -27,5 +27,14 @@
     "use_system_clipboard": "always",
     "use_multiline_find": true,
     "highlight_on_yank_duration": 200
+  },
+  "language_overrides": {
+    "Ruby": {
+      "language_server": {
+        "name": "solargraph",
+        "command": "/Users/lukemcauley/.rbenv/versions/3.1.5/bin/solargraph",
+        "args": ["stdio"]
+      }
+    }
   }
 }
