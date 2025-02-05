@@ -27,7 +27,10 @@
       "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
       "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
       "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
-      "ctrl-a": "editor::SelectAll"
+      "ctrl-a": "editor::SelectAll",
+      "tab": "pane::ActivateNextItem",
+      "shift-tab": "pane::ActivatePrevItem",
+      "space x": "pane::CloseActiveItem"
     }
   },
   {
@@ -37,7 +40,7 @@
     }
   },
   {
-    "context": "FileFinder",
+    "context": "Editor",
     "bindings": {
       "shift": "file_finder::SelectPrev"
     }
@@ -53,6 +56,15 @@
     "bindings": {
       "tab": "pane::GoBack",
       "shift-tab": "pane::GoForward"
+    }
+  },
+  {
+    "context": "KeyContextView",
+    "bindings": {
+      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
+      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"]
     }
   }
 ]
