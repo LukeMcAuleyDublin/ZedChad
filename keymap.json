@@ -21,7 +21,8 @@
   {
     "context": "Editor && !menu",
     "bindings": {
-      "tab": "file_finder::SelectPrev"
+      "tab": "file_finder::SelectPrev",
+      "shift-tab": "file_finder::ToggleMenu"
     }
   },
   {
@@ -34,14 +35,16 @@
       "ctrl-k": "workspace::ActivatePaneUp",
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-a": "editor::SelectAll",
-      "shift-ctrl-h": "pane::SplitLeft",
-      "shift-ctrl-j": "pane::SplitDown",
-      "shift-ctrl-k": "pane::SplitUp",
-      "shift-ctrl-l": "pane::SplitRight",
-      "ctrl-w-q": "pane::CloseActiveItem",
+      "ctrl-w h": "pane::SplitLeft",
+      "ctrl-w j": "pane::SplitDown",
+      "ctrl-w k": "pane::SplitUp",
+      "ctrl-w l": "pane::SplitRight",
+      "ctrl-w q": "pane::CloseActiveItem",
+      "ctrl-shift-j": "workspace::SwapPaneDown",
       "tab": "pane::ActivateNextItem",
       "shift-tab": "pane::ActivatePrevItem",
-      "space x": "pane::CloseActiveItem"
+      "space x": "pane::CloseActiveItem",
+      "g d": "editor::GoToDefinition"
     }
   },
   {
@@ -72,7 +75,8 @@
     "context": "Pane",
     "bindings": {
       "tab": "pane::GoBack",
-      "shift-tab": "pane::GoForward"
+      "shift-tab": "pane::GoForward",
+      "space e": "workspace::ToggleLeftDock"
     }
   },
   {
@@ -82,6 +86,12 @@
       "ctrl-j": "workspace::ActivatePaneDown",
       "ctrl-k": "workspace::ActivatePaneUp",
       "ctrl-l": "workspace::ActivatePaneRight"
+    }
+  },
+  {
+    "context": "Dock",
+    "bindings": {
+      "space e": "workspace::ToggleLeftDock"
     }
   }
 ]
