@@ -19,15 +19,26 @@
     }
   },
   {
+    "context": "Editor && !menu",
+    "bindings": {
+      "tab": "file_finder::SelectPrev"
+    }
+  },
+  {
     "context": "vim_mode == normal && !menu",
     "bindings": {
       "space f f": "file_finder::Toggle",
       "space f w": "pane::DeploySearch",
-      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
-      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
-      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
-      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-a": "editor::SelectAll",
+      "shift-ctrl-h": "pane::SplitLeft",
+      "shift-ctrl-j": "pane::SplitDown",
+      "shift-ctrl-k": "pane::SplitUp",
+      "shift-ctrl-l": "pane::SplitRight",
+      "ctrl-w-q": "pane::CloseActiveItem",
       "tab": "pane::ActivateNextItem",
       "shift-tab": "pane::ActivatePrevItem",
       "space x": "pane::CloseActiveItem"
@@ -40,6 +51,12 @@
     }
   },
   {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "space /": "editor::ToggleComments"
+    }
+  },
+  {
     "context": "Editor",
     "bindings": {
       "shift": "file_finder::SelectPrev"
@@ -48,7 +65,7 @@
   {
     "context": "ProjectPanel",
     "bindings": {
-      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"]
+      "ctrl-l": "workspace::ActivatePaneRight"
     }
   },
   {
@@ -61,10 +78,10 @@
   {
     "context": "KeyContextView",
     "bindings": {
-      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
-      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
-      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
-      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"]
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-l": "workspace::ActivatePaneRight"
     }
   }
 ]
