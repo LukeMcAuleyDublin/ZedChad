@@ -21,8 +21,8 @@
   {
     "context": "Editor && !menu",
     "bindings": {
-      "tab": "file_finder::SelectPrev",
-      "shift-tab": "file_finder::ToggleMenu"
+      "tab": "file_finder::SelectNext",
+      "shift-tab": "file_finder::SelectPrev"
     }
   },
   {
@@ -57,12 +57,6 @@
     "context": "vim_mode == visual",
     "bindings": {
       "space /": "editor::ToggleComments"
-    }
-  },
-  {
-    "context": "Editor",
-    "bindings": {
-      "shift": "file_finder::SelectPrev"
     }
   },
   {
