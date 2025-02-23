@@ -43,8 +43,8 @@
       "ctrl-shift-j": "workspace::SwapPaneDown",
       "tab": "pane::ActivateNextItem",
       "shift-tab": "pane::ActivatePrevItem",
-      "space x": "pane::CloseActiveItem",
-      "g d": "editor::GoToDefinition"
+      "g d": "editor::GoToDefinition",
+      "space x": "pane::CloseActiveItem"
     }
   },
   {
@@ -70,7 +70,8 @@
     "bindings": {
       "tab": "pane::GoBack",
       "shift-tab": "pane::GoForward",
-      "space e": "workspace::ToggleLeftDock"
+      "space e": "workspace::ToggleLeftDock",
+      "space t": "workspace::ToggleRightDock"
     }
   },
   {
@@ -86,6 +87,18 @@
     "context": "Dock",
     "bindings": {
       "space e": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-t": "workspace::NewTerminal",
+      "tab": "pane::GoBack",
+      "shift-tab": "pane::GoForward"
     }
   }
 ]
