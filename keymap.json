@@ -43,8 +43,11 @@
       "ctrl-shift-j": "workspace::SwapPaneDown",
       "tab": "pane::ActivateNextItem",
       "shift-tab": "pane::ActivatePrevItem",
-      "g d": "editor::GoToDefinition",
-      "space x": "pane::CloseActiveItem"
+      "space g d": "editor::GoToDefinition",
+      "space x": "pane::CloseActiveItem",
+      "space g b": "editor::ToggleGitBlame",
+      "space t": "workspace::ToggleRightDock",
+      "space e": "workspace::ToggleLeftDock"
     }
   },
   {
@@ -69,9 +72,7 @@
     "context": "Pane",
     "bindings": {
       "tab": "pane::GoBack",
-      "shift-tab": "pane::GoForward",
-      "space e": "workspace::ToggleLeftDock",
-      "space t": "workspace::ToggleRightDock"
+      "shift-tab": "pane::GoForward"
     }
   },
   {
@@ -80,11 +81,12 @@
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-j": "workspace::ActivatePaneDown",
       "ctrl-k": "workspace::ActivatePaneUp",
-      "ctrl-l": "workspace::ActivatePaneRight"
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "space x": "pane::CloseActiveItem"
     }
   },
   {
-    "context": "Dock",
+    "context": "ProjectPanel",
     "bindings": {
       "space e": "workspace::ToggleLeftDock"
     }
