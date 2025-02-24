@@ -21,7 +21,7 @@
       "ctrl-w k": "pane::SplitUp",
       "ctrl-w l": "pane::SplitRight",
       "ctrl-w v": "pane::SplitVertical",
-      "ctrl-w q": "workspace::CloseAllItemsAndPanes",
+      "ctrl-w q": "pane::CloseAllItems",
       "ctrl-shift-h": "workspace::SwapPaneLeft",
       "ctrl-shift-j": "workspace::SwapPaneDown",
       "ctrl-shift-k": "workspace::SwapPaneUp",
