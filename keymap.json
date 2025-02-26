@@ -34,7 +34,9 @@
       "space t": "workspace::ToggleRightDock",
       "space e": "workspace::ToggleLeftDock",
       "space /": ["workspace::SendKeystrokes", "shift-v g c"], // Switch to visual, comment line and switch back to normal
-      "space w": "workspace::Save"
+      "space w": "workspace::Save",
+      "space o o": "projects::OpenRecent",
+      "space g o": "git::Branch"
     }
   },
   {
@@ -56,7 +58,7 @@
       "ctrl-l": "workspace::ActivatePaneRight",
       "shift-a": "project_panel::NewDirectory",
       "a": "project_panel::NewFile",
-      "y": "project_panel::CopyRelativePath",
+      "shift-y": "project_panel::CopyRelativePath",
       "d": "project_panel::Trash",
       "space e": "workspace::ToggleLeftDock"
     }
