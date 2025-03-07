@@ -35,8 +35,12 @@
       "space e": "workspace::ToggleLeftDock",
       "space /": ["workspace::SendKeystrokes", "shift-v g c"], // Switch to visual, comment line and switch back to normal
       "space w": "workspace::Save",
+      "space g o": "git::Branch",
       "space o o": "projects::OpenRecent",
-      "space g o": "git::Branch"
+      "space l g": [
+        "task::Spawn",
+        { "task_name": "start lazygit", "reveal_target": "center" }
+      ]
     }
   },
   {
@@ -58,7 +62,7 @@
       "ctrl-l": "workspace::ActivatePaneRight",
       "shift-a": "project_panel::NewDirectory",
       "a": "project_panel::NewFile",
-      "shift-y": "project_panel::CopyRelativePath",
+      "shift-y": "workspace::CopyRelativePath",
       "d": "project_panel::Trash",
       "space e": "workspace::ToggleLeftDock"
     }
@@ -110,6 +114,21 @@
       "ctrl-t": "workspace::NewTerminal",
       "tab": "pane::ActivateNextItem",
       "shift-tab": "pane::ActivatePrevItem"
+    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "space g g": "editor::OpenExcerpts",
+      "tab": "pane::ActivateNextItem",
+      "shift-tab": "pane::ActivatePrevItem"
+    }
+  },
+  {
+    "context": "EmptyPane",
+    "bindings": {
+      "space f f": "file_finder::Toggle",
+      "space o o": "projects::OpenRecent"
     }
   }
 ]
