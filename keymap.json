@@ -3,7 +3,7 @@
     "context": "Editor && !menu",
     "bindings": {
       "tab": "menu::SelectNext",
-      "shift-tab": "menu::SelectPrev"
+      "shift-tab": "menu::SelectPrevious"
     }
   },
   {
@@ -27,7 +27,7 @@
       "ctrl-shift-k": "workspace::SwapPaneUp",
       "ctrl-shift-l": "workspace::SwapPaneRight",
       "tab": "pane::ActivateNextItem",
-      "shift-tab": "pane::ActivatePrevItem",
+      "shift-tab": "pane::ActivatePreviousItem",
       "space g d": "editor::GoToDefinition",
       "space x": "pane::CloseActiveItem",
       "space g b": "editor::ToggleGitBlame",
@@ -39,7 +39,7 @@
       "space o o": "projects::OpenRecent",
       "space l g": [
         "task::Spawn",
-        { "task_name": "start lazygit", "reveal_target": "center" }
+        { "task_name": "start lazygit", "reveal_target": "dock" }
       ]
     }
   },
@@ -64,7 +64,8 @@
       "a": "project_panel::NewFile",
       "shift-y": "workspace::CopyRelativePath",
       "d": "project_panel::Trash",
-      "space e": "workspace::ToggleLeftDock"
+      "space e": "workspace::ToggleLeftDock",
+      "r": "project_panel::Rename"
     }
   },
   {
@@ -100,7 +101,7 @@
     "context": "vim_mode == insert && Editor && showing_completions",
     "bindings": {
       "tab": "editor::ContextMenuNext",
-      "shift-tab": "editor::ContextMenuPrev"
+      "shift-tab": "editor::ContextMenuPrevious"
     }
   },
   {
@@ -113,7 +114,7 @@
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-t": "workspace::NewTerminal",
       "tab": "pane::ActivateNextItem",
-      "shift-tab": "pane::ActivatePrevItem"
+      "shift-tab": "pane::ActivatePreviousItem"
     }
   },
   {
@@ -121,7 +122,7 @@
     "bindings": {
       "space g g": "editor::OpenExcerpts",
       "tab": "pane::ActivateNextItem",
-      "shift-tab": "pane::ActivatePrevItem"
+      "shift-tab": "pane::ActivatePreviousItem"
     }
   },
   {
@@ -131,4 +132,10 @@
       "space o o": "projects::OpenRecent"
     }
   }
+  // {
+  //   "context": "Terminal && mouse_reporting == off",
+  //   "bindings": {
+  //     "space x": "pane::CloseActiveItem"
+  //   }
+  // }
 ]
